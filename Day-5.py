@@ -2,43 +2,50 @@
 
 ## Concept: Booleans
 
-""" We have two Boolean values in Python - True and False """
+# We have two Boolean values in Python - True and False
+print(5>10) # False
+print(5<10) # True
 
 ## Concept: Comparison operators
 
-""" Your first instinct might be to assume that is and == are the same things, and the same goes for is not and !=. 
-They are in fact very different, and perform very different jobs.
-'==' compares the value whereas 'is' compares memory location.
-id() - finds the memory adrress of a variable. """
+# 'is' and '==' are different things. '==' compares the value whereas 'is' compares memory location
 a = [1, 2, 3]
 b = [1, 2, 3]
-
 print(a == b)  # True
 print(a is b)  # False
 
+# id() - finds the memory adrress of a variable 
+print(id(a)) # 1747789439624
+print(id(b)) # 1747789439688
+
+
 ## Concept: Conditional statements
 
-""" Python has 3 Conditional statements - if, elif, else """
+# Python has 3 Conditional statements - if, elif, else
+age = int(input("How old are you? "))
+if age >= 18:
+	chosen_drink = "Getting wine for you"
+else:
+	print("Sorry, we can't serve you.")
 
-## Exercise
+## Exercises
 
 #1. Try to approximate the behaviour of the is operator using ==. Remember we have the id function for finding the memory address for a given value, and we can compare memory addresses to check for identity.
 a = ("Hello", "World")
 b = ("Hello", "World")
-print(id(a))
-print(id(b))
-print(a==b)
-print(a is b)
+print(id(a)) # 1835674044296
+print(id(b)) # 1835674044296
+print(a==b) # True
+print(a is b) # True
 
 #2. Try to use the is operator or the id function to investigate the difference.
 numbers = [1, 2, 3, 4]
-print(id(numbers))
+print(id(numbers)) # 1835672232648
 new_numbers = numbers + [5]
 print(numbers is new_numbers)
-
 numbers = [1, 2, 3, 4]
-numbers.append(5)
-print(id(numbers))
+numbers.append(5) # False
+print(id(numbers)) # 1835672232584
 
 #3. Ask the user to enter a number. Tell the user whether the number is positive, negative, or zero.
 num = int(input("Enter number: "))
