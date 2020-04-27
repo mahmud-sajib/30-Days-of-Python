@@ -2,6 +2,7 @@
 
 ## Concept: For loop
 
+# for loop representation
 movies = [
 	(
 		"Eternal Sunshine of the Spotless Mind",
@@ -19,13 +20,11 @@ movies = [
 		2000
 	)
 ]
-
 for movie in movies:
     print(f"{movie[0]} directed by {movie[1]}")
-
-# output: 
-# ln1: Memento directed by Christopher Nolan
-# ln2: Requiem for a Dream directed by Darren Aronofsky
+ 
+# [ln1]: Memento directed by Christopher Nolan
+# [ln2]: Requiem for a Dream directed by Darren Aronofsky
 
 ## Concept: The break statement
 
@@ -35,9 +34,8 @@ for movie in movies:
         break
     print(f"{movie[0]} directed by {movie[1]}")
 
-# output: 
-# ln1: Eternal Sunshine of the Spotless Mind directed by Michel Gondry
-# ln2: It's already listed
+# [ln1]: Eternal Sunshine of the Spotless Mind directed by Michel Gondry
+# [ln2]: It's already listed
 
 ## Concept: The range function
 
@@ -45,42 +43,47 @@ for movie in movies:
 For example, we might want to get a series of numbers starting from 1 and ending at 100, moving in steps of 3. 
 In this case, we'd have 1, 4, 7, 10, 13, 16, 19, etc."""
 
-# range in for loops
+# range(end) - starts from 0 and ends at specified number
+print(range(10)) # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+# using range in for loops - range(initialize,end,steps)
 for n in range(1,10,3):
     print(n)
+# output: 1, 4, 7
 
 ## Exercise
 
 #1. Below we've provided a list of tuples, where each tuple contains details about an employee of a shop: their name, the number of hours worked last week, and their hourly rate. Print how much each employee is due to be paid at the end of the week in a nice, readable format.
-
 employees = [
     ("Rolf Smith", 35, 8.75),
     ("Anne Pun", 30, 12.50),
     ("Charlie Lee", 50, 15.50),
     ("Bob Smith", 20, 7.00)
 ]
-
 for employee in employees:
     print(f"{employee[0]} will be paid {employee[1]*employee[2]}")
 
-#2. For the employees above, print out those who are earning an hourly wage above average.
+# [ln1]: Rolf Smith will be paid 306.25
+# [ln2]: Anne Pun will be paid 375.0
+# [ln3]: Charlie Lee will be paid 775.0
+# [ln4]: Bob Smith will be paid 140.0
 
+#2. For the employees above, print out those who are earning an hourly wage above average.
 total = 0
 count = 0
 for employee in employees:
     salary = employee[1]*employee[2]
     total = total + salary
-    count += 1
-    
-print(total)
-print(count)
+    count += 1    
+
 avg = total/count
-print(avg)
 
 for employee in employees:
     salary = employee[1]*employee[2]
     if salary > avg:
         print(f"{employee[0]} has salary {salary}")
+
+# output: Charlie Lee has salary 775.0
 
 ## Project: Fizz Buzz
 
