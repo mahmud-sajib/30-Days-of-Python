@@ -8,8 +8,8 @@ text = "This is a string!"
 ## Concept: The exception
 
 # When we refer to a variable that is not defined yet, NameError exception occurs
-# salary
-# print(salary*2)
+salary
+print(salary*2)
 # output: NameError: name 'salary' is not defined
 
 ## Concept: Getting values from the user
