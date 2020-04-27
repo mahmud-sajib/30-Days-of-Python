@@ -1,13 +1,13 @@
 ## Day 3: Formatting Strings and Processing User Input
 
-# Concept: String concatenation
+## Concept: String concatenation
 
 # We use the '+' operator for string concatenation
 name = "John"
 greet = "Hello "
 print(greet + name)
 
-# Concept: Converting strings, integers, and floats
+## Concept: Converting strings, integers, and floats
 
 # str() - convert to string
 age = str(28)
@@ -81,15 +81,15 @@ film = "{0} ({2}), directed by {1}".format(title, director, release_year)
 print(film)
 # output: Joker (2019), directed by Todd Phillips
 
-## Project: A Simple Earnings Calculator
+## Project
 
+# A Simple Earnings Calculator
 employee_name = input("Name of employee: ")
 hourly_wage = int(input("Hourly wage: "))
 hours_worked = int(input("Working hours: "))
 detail = f"{employee_name.title()} earned ${hourly_wage*hours_worked} this week."
 print(detail.strip())
 # output: John K earned $150 this week.
-
 
 
 

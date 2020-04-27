@@ -7,6 +7,9 @@ names = ["John", "Alice", "Sarah", "George"]
 print(names)
 # output: ['John', 'Alice', 'Sarah', 'George']
 
+# Empty list - It’s also possible to define a list with no content, which is represented by an empty pair of square brackets []
+names = []
+
 ## Concept: Accessing values in a list
 
 # positive index starts with 0 & counts from first to last
@@ -52,11 +55,13 @@ del names[0]
 print(names)
 # output: ['Sarah', 'Alice', 'John']
 
-# pop() - removes the last item in the list (we can optionally pass in an index as an argument to remove a different item instead)
+# pop() - removes the last item in the list 
 names = ["John", "Sarah", "Alice", "John"]
 names.pop()
 print(names)
 # output: ['John', 'Sarah', 'Alice']
+
+# pop(index) - we can optionally pass in an index as an argument to remove a different item instead
 names.pop(0)
 print(names)
 # output: ['Sarah', 'Alice']
@@ -74,6 +79,13 @@ names = ("John", "Sarah", "Alice")
 print(names)
 # output: ('John', 'Sarah', 'Alice')
 
+# tuple concatenation - we can only use '+' to join two tuples
+first_names = ("John", "Sarah", "Alice")
+last_names = ("Doe", "Ali", "Shefard")
+full_names = first_names + last_names
+print(full_names)
+# output: ('John', 'Sarah', 'Alice', 'Doe', 'Ali', 'Shefard')
+
 ## Concept: Accessing values in a tuple
 
 # tuple elements can be accessed by index number same as lists 
@@ -89,6 +101,7 @@ This means you won’t find any pop, del or append methods for tuples."""
 
 ## Concept: Accessing values in nested collections
 
+# [] - yields the list element & [][] - yields the tuple value  
 movies = [
 	("Eternal Sunshine of the Spotless Mind", 2004),
 	("Memento", 2000),
@@ -97,7 +110,7 @@ movies = [
 print(movies[1][0])
 # output: Memento
 
-## Exercise
+## Exercises
 
 #1. Create a movies list containing a single tuple. The tuple should contain a movie title, the director’s name, the release year of the movie, and the movie’s budget.
 movies = [
