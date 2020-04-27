@@ -19,6 +19,8 @@ print(4)
 print(5 * 3 - 6 + 4 / 4)
 # output: 10.0
 
+## Exercises
+
 #1. Print your age to the console.
 print(29)
 # output: 29
