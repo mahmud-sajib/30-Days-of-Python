@@ -15,14 +15,23 @@ greet = 'I am good. Hope you are too. Go get coffee'.split(".")
 print(greet)
 # output: ['I am good', ' Hope you are too', ' Go get coffee']
 
+# list() - turns a string into a list
+fav_lang = "Python"
+print(list(fav_lang))
+# output: ['P', 'y', 't', 'h', 'o', 'n']
+
+# tuple() - turns a string into a tuple
+fav_lang = "Python"
+print(tuple(fav_lang))
+# output: ('P', 'y', 't', 'h', 'o', 'n')
+
 ## Concept: The newline character
 
 # we represent newline character as \n
 print("Super Special Mega \n Awesome Program \n By Phillip Best")
-# output: 
-# ln1: Super Special Mega
-# ln2: Awesome Program
-# ln3:By Phillip Best
+# [ln1]: Super Special Mega
+# [ln2]: Awesome Program
+# [ln3]:By Phillip Best
 
 ## Concept: Slicing
 
@@ -47,13 +56,16 @@ print(fruit[3:-1])
 numbers = [1, 2, 3, 4, 5]
 print(len(numbers))
 # output: 5
+text = "Hello World"
+print(len(text))
+# output: 11
 
 ## Exercise:
 
 #1. Ask the user to enter their given name and surname in response to a single prompt. Use split to extract the names, and then assign each name to a different variable. For this exercise, you can assume that the user has a single given name and a single surname.
-# names = input("Please enter your full name: ").split()
-# print(names[0])
-# print(names[1])
+names = input("Please enter your full name: ").split()
+print(names[0])
+print(names[1])
 
 #2. Print the list, [1, 2, 3, 4, 5], in the format 1 | 2 | 3 | 4 | 5 using the join method.
 num = [1, 2, 3, 4, 5]
@@ -87,18 +99,18 @@ for q in quotes:
 
 #4. Ask the user to enter a word, and then print out the length of the word.
 
-# text = input("Please enter text: ").strip()
-# char_count = len(text)
-# print(char_count)
-# # output: 20
+# count characters
+text = input("Please enter text: ").strip()
+char_count = len(text)
+print(char_count)
 
-# words = text.split(" ")
-# print(words)
-# word_count = 0
-# for w in words:
-#     word_count += 1
-# print(word_count)
-# output: 5
+# count words
+words = text.split(" ")
+print(words)
+word_count = 0
+for w in words:
+    word_count += 1
+print(word_count)
 
 ## Project: Movie Budgets
 
