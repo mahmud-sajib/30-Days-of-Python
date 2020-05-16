@@ -17,21 +17,21 @@ def get_even_numbers():
 
 get_even_numbers()
 
-# Function parameters and arguments
+## Concept: Function parameters and arguments
 def get_even_numbers(amount):
 	for number in range(1, amount + 1):
 		print(number * 2)
 
 get_even_numbers(5)
 
-# Specifying multiple parameters
+## Concept: Specifying multiple parameters
 def sayHello(arg, quantity):
 	for _ in range(quantity):
 		print(arg)
 
 sayHello("Hello", 5)
 
-# Keyword arguments
+## Concept: Keyword arguments
 def sayHello(arg, quantity):
 	for _ in range(quantity):
 		print(arg)
