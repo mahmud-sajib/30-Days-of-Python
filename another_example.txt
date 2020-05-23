@@ -1,0 +1,2 @@
+Welcome to the world, write_example.txt!
+Holla appending something!
