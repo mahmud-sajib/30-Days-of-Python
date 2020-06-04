@@ -22,7 +22,8 @@ class Band(Music):
 """
 super() simply refers to the parent class.
 super().__init__(band,genre)
-This is simply calling the constructor of the parent class, in our case Music. This is how we inherit all of the properties and methods in our Band child class.
+This is simply calling the constructor of the parent class, in our case Music. 
+This is how we inherit all of the properties and methods in our Band child class.
 """
 
 # Creating Objects
@@ -36,6 +37,7 @@ band2 = Band("Lalon","folk","Bangladeshi")
 # accessing parent class method
 band2.info()
 # output: Artcell is my favorite band & they play folk music
+
 # accessing child class method
 band2.bandInfo()
 # output: Artcell is a Bangladeshi band which play folk music

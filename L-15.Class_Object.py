@@ -42,19 +42,23 @@ print(person2.name) # Lora Akintson
 
 # Simple class with custom method. 'self' is a must use argument in any method inside class.
 class Person:
+    # class attribute
+    country = "England"
+
+    # instance attribute
     def __init__(self, person_name, person_job):
-        
         self.name = person_name
         self.job = person_job
-
+        
+    # instance method
     def intro(self):
-        print(f"{self.name} is a {self.job}")
+        print(f"{self.name} is a {self.job} from {self.country}")
     
 person1 = Person("Johnny Depp", "Actor")
-person1.intro() # Johnny Depp is a Actor
+person1.intro() # Johnny Depp is a Actor from England
 
 person2 = Person("Lora Akintson", "Doctor")
-person2.intro() # Lora Akintson is a Doctor
+person2.intro() # Lora Akintson is a Doctor from England
 
 
 
