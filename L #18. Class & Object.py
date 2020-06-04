@@ -1,4 +1,4 @@
-## Lesson 15: Class & Object
+## Day 18: Class & Object
 
 ## Concept: Creating a Class - To define a class, use the class keyword, and define the data points inside.
 

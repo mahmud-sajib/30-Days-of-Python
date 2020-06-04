@@ -1,4 +1,4 @@
-## Encapsulation
+## Day 20: Encapsulation
 
 """
 Using OOP in Python, we can restrict access to methods and variables. 

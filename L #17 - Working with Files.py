@@ -1,4 +1,4 @@
-## Day 14: Working with Files
+## Day 17: Working with Files
 
 ## Concept: The open function - By default, open is going to open our files in read mode, which is why we only have read access.
 

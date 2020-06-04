@@ -1,4 +1,4 @@
-## Day 16: First Class Functions and Lambda Expressions
+## Day 14: First Class Functions
 
 ## Concept: What are first class functions?
 """ In Python, functions are first class object (first class citizen too!). Programming language theorists defined some criteria for first class object of a programming language. A “first class object” is a program entity which can be :

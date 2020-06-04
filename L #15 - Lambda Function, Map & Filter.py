@@ -1,4 +1,4 @@
-## Day 18: Python Anonymous/Lambda Function
+## Day 15: Lambda Function, Map & Filter
 
 ## Concept: What are lambda functions in Python?
 """

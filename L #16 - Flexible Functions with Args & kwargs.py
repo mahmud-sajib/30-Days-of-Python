@@ -1,4 +1,4 @@
-## *args & **kwargs
+## Day 16: Flexible Functions with *args & **kwargs
 
 ## Concept: What is *args and **kwargs ?
 

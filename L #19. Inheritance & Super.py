@@ -1,4 +1,4 @@
-## Lesson 16: Inheritance and Super
+## Day 19: Inheritance and Super
 
 ## Concept: Inheritance and Super
 
