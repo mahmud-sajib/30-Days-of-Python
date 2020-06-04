@@ -225,5 +225,5 @@ country_info(**country)
 #4. Using * unpacking and range, print the numbers 1 to 20, separated by commas.
 print(*range(1,21), sep=", ")
 
-#5.  Modify your code from exercise 4 so that each number prints on a different line. You can only use a single print call.
+#5. Modify your code from exercise 4 so that each number prints on a different line. You can only use a single print call.
 print(*range(1,21), sep="\n")
