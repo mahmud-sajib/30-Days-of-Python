@@ -1,4 +1,4 @@
-## Day 19: Inheritance and Super
+## Day 24: Inheritance and Super
 
 ## Concept: Inheritance and Super
 
