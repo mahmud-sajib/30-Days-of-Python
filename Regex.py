@@ -25,7 +25,7 @@ else:
 
 # output: The pattern is invalid
 
-# MetaCharacters
+## Concept: MetaCharacters
 
 """
 Metacharacters are characters that are interpreted in a special way by a RegEx engine. 
@@ -33,7 +33,8 @@ Here's a list of metacharacters:
 [] . ^ $ * + ? {} () \ |
 """
 
-# [] - Square brackets
+# [] => Square brackets - Square brackets specifies a set of characters you wish to match.
+"""
 +------------+-----------+---------------+
 | Expression |  String   | Matched Items |
 +============+===========+===============+
@@ -45,23 +46,61 @@ Here's a list of metacharacters:
 +------------+-----------+---------------+
 |            | abc de ca | 5 matches     |
 +------------+-----------+---------------+
+"""
 
-+------------+------+------+
-| Expression | Tue  | Wed  |
-+============+======+======+
-| 田中       | (^^) | (xx) |
-+------------+------+------+
-| 鈴木       | (^^) | (^^) |
-+------------+------+------+
-| 鈴木       | (^^) | (^^) |
-+------------+------+------+
+"""
+Here, [abc] will match if the string you are trying to match contains any of the a, b or c.
+"""
 
-+------+------+------+------+------+------+
-| Mon  | Tue  | Wed  | Thu  | Fri  |      |
-+======+======+======+======+======+======+
-| 田中 | (^^) | (xx) | (xx) | ('') | (^^) |
-+------+------+------+------+------+------+
-| 鈴木 | (^^) | (^^) | ('') | (xx) | (^^) |
-+------+------+------+------+------+------+
-| Mon  | Tue  | Wed  | Thu  | Fri  |      |
+"""
+You can also specify a range of characters using - inside square brackets.
+
+    [a-e] is the same as [abcde].
+    [1-4] is the same as [1234].
+"""
+
+"""
+You can complement (invert) the character set by using 'caret ^' symbol at the start of a square-bracket.
+
+    [^abc] means any character except a or b or c.
+    [^0-9] means any non-digit character.
+"""
+
+# . => Period - A period matches any single character (except newline '\n'). 
+"""
++------------+--------+---------------+
+| Expression | String | Matched Items |
++============+========+===============+
+|            | a      | 1 match       |
++------------+--------+---------------+
+| .          | ab     | 2 matches     |
++------------+--------+---------------+
+|            | abc    | 3 matches     |
++------------+--------+---------------+
+|            | \n     | No match      |
++------------+--------+---------------+
+"""
+
+# ^ => Caret - The caret symbol ^ is used to check if a string starts with a certain character.
+"""
++------------+--------+---------------+
+| Expression | String | Matched Items |
++============+========+===============+
+|            | a      | 1 match       |
++------------+--------+---------------+
+| ^a         | abc    | 1 match       |
++------------+--------+---------------+
+|            | bac    | No match      |
++------------+--------+---------------+
+
++------------+--------+------------------------------------------------+
+| Expression | String |                 Matched Items                  |
++============+========+================================================+
+|            | abc    | 1 match                                        |
++------------+--------+------------------------------------------------+
+| ^ab        | acb    | No match (starts with a but not followed by b) |
++------------+--------+------------------------------------------------+
+
+"""
+
 
