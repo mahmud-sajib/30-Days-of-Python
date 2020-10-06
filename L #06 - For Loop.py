@@ -20,11 +20,13 @@ movies = [
 		2000
 	)
 ]
+
 for movie in movies:
     print(f"{movie[0]} directed by {movie[1]}")
- 
-# [ln1]: Memento directed by Christopher Nolan
-# [ln2]: Requiem for a Dream directed by Darren Aronofsky
+
+# [ln1]: Eternal Sunshine of the Spotless Mind directed by Michel Gondry
+# [ln2]: Memento directed by Christopher Nolan
+# [ln3]: Requiem for a Dream directed by Darren Aronofsky
 
 ## Concept: The break statement
 
