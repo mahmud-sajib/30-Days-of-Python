@@ -45,7 +45,9 @@ class BankAccount():
 
 # instantiate object
 customer_info = BankAccount("John Snow",2000)
+
 # calling getter
 customer_info.balanceGetter()
+
 # calling setter
 customer_info.balanceSetter(500)
