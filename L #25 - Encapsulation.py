@@ -3,7 +3,7 @@
 """
 Using OOP in Python, we can restrict access to methods and variables. 
 This prevent data from direct modification which is called encapsulation. 
-In Python, we denote private attribute using underscore as prefix i.e single “ _ “ or double “ __“.
+In Python, we denote private attribute using underscore as prefix i.e single "_" or double "__".
 """
 
 # Simple class (Consider the below example. If we don't make our attributes private anyone can manipulate the 'balance')
