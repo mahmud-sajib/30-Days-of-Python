@@ -80,13 +80,6 @@ band2.info()
 band2.bandInfo()
 # output: Lalon is a Bangladeshi band which play folk music
 
-    
-
-
-
-
-
-
 # accessing child class method
 band2.bandInfo()
 # output: Artcell is a Bangladeshi band which play folk music
